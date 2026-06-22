@@ -1,4 +1,4 @@
-# RetificAe - Simulador de Retificadores Controlados
+# RetiFick - Simulador de Retificadores Controlados
 
 App didatico em Python/Streamlit para simular curvas de tensao e corrente em retificadores controlados.
 
