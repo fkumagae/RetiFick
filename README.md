@@ -4,10 +4,16 @@ App didatico em Python/Streamlit para simular curvas de tensao e corrente em ret
 
 ## Topologias incluidas
 
-- Monofasico: meia onda, meia onda com roda livre, ponto medio e Graetz.
+- Monofasico: meia onda, meia onda com roda livre, mista, ponto medio e Graetz.
 - Trifasico: meia onda, meia onda com roda livre, ponto medio de 3 pulsos e Graetz de 6 pulsos.
 - Cargas: R, RL e RLE.
 - Parametros: tensao RMS, frequencia, R, L, E, alfa e beta.
+
+Convencao da tensao RMS de entrada:
+
+- Monofasico `Ponto medio`: o valor informado e a tensao RMS de cada meia-secundaria em relacao ao tap central.
+- Monofasico `Meia onda`, `Meia onda com roda livre`, `Mista` e `Graetz`: o valor informado e a tensao RMS do secundario aplicado ao retificador.
+- Trifasico: o valor informado e a tensao RMS fase-neutro.
 
 ## Como rodar
 
@@ -20,6 +26,18 @@ streamlit run app.py
 ```
 
 O navegador abrirá o app automaticamente.
+
+## Estrutura do projeto
+
+```text
+app.py                 # ponto de entrada do Streamlit
+retifick/
+  config.py            # persistencia da ultima configuracao usada
+  constants.py         # listas de topologias e cargas
+  models.py            # dataclasses e tipos do dominio
+  simulation.py        # calculos eletricos e montagem das formas de onda
+  ui.py                # layout Streamlit e coleta de parametros
+```
 
 ## Convencao usada para beta
 
