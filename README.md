@@ -1,4 +1,4 @@
-# Simulador de Retificadores Controlados
+# RetificAe - Simulador de Retificadores Controlados
 
 App didatico em Python/Streamlit para simular curvas de tensao e corrente em retificadores controlados.
 
@@ -15,7 +15,7 @@ App didatico em Python/Streamlit para simular curvas de tensao e corrente em ret
 2. No terminal, dentro da pasta do projeto, rode:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txthttps://github.com/fkumagae/RetificAe/blob/main/README.md
 streamlit run app.py
 ```
 
