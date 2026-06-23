@@ -21,7 +21,7 @@ Convencao da tensao RMS de entrada:
 2. No terminal, dentro da pasta do projeto, rode:
 
 ```bash
-pip install -r requirements.txthttps://github.com/fkumagae/RetificAe/blob/main/README.md
+pip install -r requirements.txt
 streamlit run app.py
 ```
 
